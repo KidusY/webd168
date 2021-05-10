@@ -5,6 +5,29 @@
   font-family: "Roboto", sans-serif;
 }
 
+.nav-link {
+  transition: ease-in-out 0.5s;
+  color: white !important;
+}
+
+.navbar-brand {
+  color: #c08b59 !important;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transition: ease-in-out 0.5s;
+  -webkit-transition: ease-in-out 0.5s;
+  -moz-transition: ease-in-out 0.5s;
+  -ms-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
+  font-weight: bold;
+}
+
 .portfolio {
   min-height: 100vh;
   height: auto;
@@ -116,4 +139,9 @@
   .description .skills ul {
     list-style-type: none;
   }
+}
+
+.btn {
+  background-color: #b47539;
+  color: white;
 }

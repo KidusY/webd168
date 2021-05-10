@@ -15,7 +15,28 @@ $tablet: 800px;
   box-sizing: border-box;
   font-family: $font-family;
 }
+.nav-link {
+   transition: ease-in-out 0.5s;
+   color: white !important;
+}
+.navbar-brand{
+  color:rgb(192, 139, 89) !important;
+}
 
+
+.nav-link:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transition: ease-in-out 0.5s;
+  -webkit-transition: ease-in-out 0.5s;
+  -moz-transition: ease-in-out 0.5s;
+  -ms-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
+  font-weight: bold;
+}
 .portfolio {
   min-height: 100vh;
   height: auto;
@@ -126,4 +147,9 @@ $tablet: 800px;
       }
     }
   }
+}
+
+.btn{
+  background-color: rgb(180, 117, 57);
+  color: white;
 }
