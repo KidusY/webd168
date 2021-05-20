@@ -1,0 +1,196 @@
+/* CSS Document */
+body {
+	width: 85%;
+	margin: 1em auto 0;
+	font: 90%/1.5 Georgia, 'Times New Roman', T, serif;
+}
+h1 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 2.8em;
+	font-weight: bold;
+	color: #0d1f59;
+}
+.buttons{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+button {
+	text-transform: uppercase;
+	padding: 15px;
+	cursor: pointer;
+}
+.blue-eyes .eye-color {
+	fill: #175282;
+}
+svg{
+	display: block;
+	margin: 50px auto;
+}
+
+.sad .mouth {
+	transform: rotate(180deg) scale(0.5);
+	transform-origin: 340px 390px;
+	-webkit-transform: rotate(180deg) scale(0.5);
+	-moz-transform: rotate(180deg) scale(0.5);
+	-ms-transform: rotate(180deg) scale(0.5);
+	-o-transform: rotate(180deg) scale(0.5);
+}
+@keyframes moveEyes {
+	20% {
+		transform: translate(-18px, -20px);
+		-webkit-transform: translate(-18px, -20px);
+		-moz-transform: translate(-18px, -20px);
+		-ms-transform: translate(-18px, -20px);
+		-o-transform: translate(-18px, -20px);
+	}
+	40% {
+		transform: translate(0, 0);
+		-webkit-transform: translate(0, 0);
+		-moz-transform: translate(0, 0);
+		-ms-transform: translate(0, 0);
+		-o-transform: translate(0, 0);
+	}
+
+	65% {
+		transform: translate(18px, -20px);
+		-webkit-transform: translate(18px, -20px);
+		-moz-transform: translate(18px, -20px);
+		-ms-transform: translate(18px, -20px);
+		-o-transform: translate(18px, -20px);
+	}
+}
+
+@keyframes leftWhiskers {
+	20% {
+		transform: rotate(5deg);
+		-webkit-transform: rotate(5deg);
+		-moz-transform: rotate(5deg);
+		-ms-transform: rotate(5deg);
+		-o-transform: rotate(5deg);
+	}
+	60% {
+		transform: rotate(-5deg);
+		-webkit-transform: rotate(-5deg);
+		-moz-transform: rotate(-5deg);
+		-ms-transform: rotate(-5deg);
+		-o-transform: rotate(-5deg);
+	}
+}
+@keyframes rightWhiskers {
+	20% {
+		transform: rotate(-6deg);
+		-webkit-transform: rotate(-6deg);
+		-moz-transform: rotate(-6deg);
+		-ms-transform: rotate(-6deg);
+		-o-transform: rotate(-6deg);
+	}
+	60% {
+		transform: rotate(5deg);
+		-webkit-transform: rotate(5deg);
+		-moz-transform: rotate(5deg);
+		-ms-transform: rotate(5deg);
+		-o-transform: rotate(5deg);
+	}
+}
+
+@keyframes moveHead {
+	20% {
+		transform: rotateY(10deg) rotateX(10 deg);
+		-webkit-transform: rotateY(10deg) rotateX(10 deg);
+		-moz-transform: rotateY(10deg) rotateX(10 deg);
+		-ms-transform: rotateY(10deg) rotateX(10 deg);
+		-o-transform: rotateY(10deg) rotateX(10 deg);
+	}
+	40% {
+		transform: rotateY(25deg) rotateX(10 deg);
+		-webkit-transform: rotateY(25deg) rotateX(10 deg);
+		-moz-transform: rotateY(25deg) rotateX(10 deg);
+		-ms-transform: rotateY(25deg) rotateX(10 deg);
+		-o-transform: rotateY(25deg) rotateX(10 deg);
+	}
+	60% {
+		transform: rotateY(-10deg) rotateX(-10 deg);
+		-webkit-transform: rotateY(-10deg) rotateX(-10 deg);
+		-moz-transform: rotateY(-10deg) rotateX(-10 deg);
+		-ms-transform: rotateY(-10deg) rotateX(-10 deg);
+		-o-transform: rotateY(-10deg) rotateX(-10 deg);
+	}
+	85% {
+		transform: rotateY(10deg) rotateX(-16 deg);
+		-webkit-transform: rotateY(10deg) rotateX(-16 deg);
+		-moz-transform: rotateY(10deg) rotateX(-16 deg);
+		-ms-transform: rotateY(10deg) rotateX(-16 deg);
+		-o-transform: rotateY(10deg) rotateX(-16 deg);
+	}
+}
+
+.move-around .inner-eye-group {
+	animation: moveEyes 5s infinite;
+	-webkit-animation: moveEyes 5s infinite;
+}
+
+.move-around .left-whiskers {
+	animation: leftWhiskers 3s infinite;
+	-webkit-animation: leftWhiskers 3s infinite;
+	transform-origin: 325px 350px;
+}
+.move-around .right-whiskers {
+	animation: rightWhiskers 4s infinite;
+	-webkit-animation: rightWhiskers 4s infinite;
+	transform-origin: 325px 350px;
+}
+.move-around {
+	animation: moveHead 8s infinite;
+	-webkit-animation: moveHead 8s infinite;
+}
+
+
+.paragraph{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	margin: 10px auto;
+}
+.paragraph p{
+	width: 40%;
+	margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+	.paragraph p{
+	width: 100%;
+}
+svg{
+	display: block;
+	
+	margin: 0 auto;
+	transform: scale(.5) translateX(-320px);
+	-webkit-transform: scale(.5) translateX(-320px);
+	-moz-transform: scale(.5) translateX(-320px);
+	-ms-transform: scale(.5) translateX(-320px);
+	-o-transform: scale(.5) translateX(-320px);
+}
+.buttons button{
+	width: 100%;
+	margin-top:10px ;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
