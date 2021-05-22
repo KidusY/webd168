@@ -11,7 +11,7 @@
 }
 
 .navbar-brand {
-  color: #c08b59 !important;
+  color: #fff5eb !important;
 }
 
 .nav-link:hover {
@@ -88,6 +88,9 @@
 .contactInfo ul li {
   width: 100%;
   justify-content: center;
+}
+.contactInfo ul li a {
+  color: white;
 }
 
 .description {
