@@ -13,7 +13,7 @@
 }
 
 .navbar-brand {
-  color: #c08b59 !important;
+  color: #fff5eb !important;
 }
 
 .nav-link:hover {
@@ -99,6 +99,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.contactInfo ul li a {
+  color: white;
 }
 
 .description {
